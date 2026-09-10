@@ -3,33 +3,33 @@
 ### Section: 2ECE-C
 ### Date Submitted: September 10, 2026
 
-In this Program Assignment, three different problems were asked to demonstrate proficiency in Pandas data analysis. Each problem focuses on different aspects of data manipulation, from positional and label-based indexing to Boolean filtering and conditional selection 
+In this Program Assignment, three different problems were given to demonstrate the use of Pandas for data analysis. Each problem focuses on different ways of working with data, such as selecting specific rows and columns, finding particular car models, and choosing records based on certain conditions. The activities also show how to organize and view specific information from a dataset while keeping the original data unchanged. Through these problems, the car dataset can be examined more easily and the required information can be selected according to the given instructions.
 
 # Problem 1: Positional and Label-Based Slicing
 
 ````
 import pandas as pd
 ````
-### In this part of the code, it prepares the program to work with the car data.
+In this part of the code, it prepares the program to work with the car data.
 
 ````
 cars = pd.read_csv('cars.csv')
 cars
 ````
-In this part of the code, the cars.csv file is loaded into a DataFrame named cars. The cars DataFrame contains the information about the different vehicles that will be used for the activity.
+In this part of the code, it loads the car data from the CSV file and displays the information in the table.
 
 
 ````
 print(cars.shape)
 print(cars.columns.tolist())
 ````
-This part of the code shows the size of the cars DataFrame and the complete list of column names. The shape shows the number of rows and columns, while columns.tolist() displays all the column names in a list.
+This part of the code shows the number of rows and columns in the table and provides a list of the information included in the dataset.
 
 ````
 cars_6_to_10 = cars.iloc[5:10]
 cars_6_to_10
 ````
-In this part of the code, positional indexing with iloc selects rows 6 through 10 from the dataset. The selected rows are then stored in a new DataFrame named cars_6_to_10 without changing the original cars DataFrame.
+In this part of the code, it selects cars 6 to 10 from the list and displays the information for those cars.
 
 ````
 cars_6_to_10 = cars.iloc[6:11]
