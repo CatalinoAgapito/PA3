@@ -10,7 +10,7 @@ In this Program Assignment, three different problems were asked to demonstrate p
 ````
 import pandas as pd
 ````
-In this part of the code, it imports the Pandas library and gives it the name pd. This allows Pandas functions to be used later in the program to work with and analyze the data.
+### In this part of the code, it prepares the program to work with the car data.
 
 ````
 cars = pd.read_csv('cars.csv')
