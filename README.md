@@ -6,6 +6,7 @@
 In this Program Assignment, three different problems were given to demonstrate the use of Pandas for data analysis. Each problem focuses on different ways of working with data, such as selecting specific rows and columns, finding particular car models, and choosing records based on certain conditions. The activities also show how to organize and view specific information from a dataset while keeping the original data unchanged. Through these problems, the car dataset can be examined more easily and the required information can be selected according to the given instructions.
 
 # Problem 1: Positional and Label-Based Slicing
+In this problem, it requires examining the car dataset and selecting specific rows and columns from the given information. The goal is to demonstrate how data from a larger table can be accessed and organized according to the required rows and columns.
 
 ````
 import pandas as pd
@@ -39,6 +40,8 @@ In this part of the code, it selects specific columns from cars_6_to_10, includi
 
 
 # Problem 2: Model Lookup
+In this problem, it requires finding specific car models from the dataset and displaying the information requested for each one. The goal is to locate individual records and present only the necessary details for the selected vehicles.
+
 ````
 toyota = cars[cars["Model"] == "Toyota Corolla"]
 toyota
@@ -52,6 +55,7 @@ pontiac
 In this part of the code, Boolean indexing is used to search for Pontiac Firebird in the Model column. It then selects only the Model, mpg, hp, and wt columns and stores the result in a DataFrame named pontiac.
 
 # Problem 3: Multi-Model Subsetting
+In this problem, it requires selecting several specific car models from the dataset and displaying only the information needed for comparison. The goal is to organize the selected records into a smaller table while keeping the original dataset unchanged.
 ````
 selected_cars = cars.loc[cars["Model"].isin(["Datsun 710", "Lotus Europa", "Ferrari Dino"]), ["Model", "mpg", "cyl", "hp", "gear"]]
 selected_cars
